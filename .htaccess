@@ -1,0 +1,4 @@
+RewriteEngine On
+
+# Rewrite rule to handle friendly URLs
+RewriteRule ^([a-zA-Z0-9]{6})$ redirect.php?code=$1 [L,QSA]
